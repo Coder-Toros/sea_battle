@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 3px;
+}
+.container{
+    border: 3px solid;
+    width: 650px;
+    height: 70vh;
+    margin: 50px auto;
+    display: grid;
+    grid-template: 
+    "a a . b . . c c c c" 1fr 
+    ". . . b . . . . . ." 1fr
+    "d . . b . e e e . f" 1fr
+    "d . . . . . . . . f" 1fr
+    "d . . . . . . . . ." 1fr
+    "d . . . . g . . . h" 1fr
+    ". . . . . g . . . h" 1fr
+    "i i . . . . . . . h" 1fr
+    ". . . . . . . . . ." 1fr
+    ". . . . j j j j j j" 1fr;
+}
+.ship{
+    outline: 2px solid;
+}
+.violet-flot{
+    background-color: rgb(112, 22, 112);
+}
+.blue-flot{
+    background-color: blue;
+}
+.green-flot{
+    background-color: rgb(123, 186, 29);
+}
+.ship:nth-child(1){
+    grid-area: a;
+}
+.ship:nth-child(2){
+    grid-area: b;
+}
+.ship:nth-child(3){
+    grid-area: c;
+}
+.ship:nth-child(4){
+    grid-area: d;
+}
+.ship:nth-child(5){
+    grid-area: e;
+}
+.ship:nth-child(6){
+    grid-area: f;
+}
+.ship:nth-child(7){
+    grid-area: g;
+}
+.ship:nth-child(8){
+    grid-area: h;
+}
+.ship:nth-child(9){
+    grid-area: i;
+}
+.ship:nth-child(10){
+    grid-area: j;
+    background-color: rgb(255, 90, 14);
+}
